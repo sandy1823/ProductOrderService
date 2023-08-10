@@ -1,0 +1,35 @@
+module.exports = {
+	STATUSES: {
+		ACTIVE: 'ACTIVE',
+		INACTIVE: 'INACTIVE',
+	},
+
+	DEFAULT_ORDER_STATUSID: process.env.ORDER_NEW_STATUS_ID || 1,
+	DEFAULT_ORDER_CANCEL_STATUSID: process.env.ORDER_CANCEL_STATUS_ID || 4,
+
+	ORDERSTATUS: {
+		NEW: 'NEW',
+		INPROGRESS: 'INPROGRESS',
+		DELIVERED: 'DELIVERED',
+		CANCEL: 'CANCELLED',
+		PENDING: 'PENDING',
+	},
+
+	REFUND_STATUS: {
+		INITIATED: 'INITIATED',
+		REQUESTED: 'REQUESTED',
+		COMPLETED: 'COMPLETED',
+	},
+
+	REFUND_SPEED: {
+		NORMAL: 'normal',
+		OPTIMUM: 'optimum',
+	},
+	HTTP_METHOD: {
+		GET: 'GET',
+		POST: 'POST',
+		PUT: 'PUT',
+		DELETE: 'DELETE',
+	},
+	LOGS_DIR: process.env.LOGS_DIR || `${process.cwd()}/logs`,
+};

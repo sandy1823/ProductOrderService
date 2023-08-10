@@ -1,0 +1,36 @@
+{
+	"db_postgres": {
+		"user": "db_oms_orders_user",
+		"port": 5432,
+		"host": "dev.bassure.in",
+		"database": "db_oms_orders",
+		"password": "oms-orders@001"
+	},
+	"response_code": {
+		"db_auth_failed": 602,
+		"success": 600,
+		"field_validation": 605,
+		"error": 604,
+		"empty_results": 615,
+		"error_message": "Please Check Logs",
+		"constraints_violation": 651,
+		"fk_constraint_exception": 606,
+		"partialSuccess": 601,
+		"duplication_exception": 607,
+
+		"user_not_exists": 702,
+
+		"unable_to_make_internal_call": 801,
+
+		"expectation_failed": 901
+	},
+	"http_status": {
+		"ok": 200
+	},
+	"errors": {
+		"23505": "duplication_exception",
+		"23503": "fk_constraint_exception",
+		"23502": "fk_constraint_exception",
+		"28P01": "db_auth_failed"
+	}
+}
